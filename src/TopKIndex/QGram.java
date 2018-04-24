@@ -44,7 +44,11 @@ public class QGram {
             this.insert(input.substring(i, i+3),i+1);
         }
     }
-    
+    public void constructNonOverlappingqgram(String input,int start){
+        for(int i=start;i<input.length()-2;i=i+3){
+            this.insert(input.substring(i, i+3),i+1);
+        }
+    }
     
     
     

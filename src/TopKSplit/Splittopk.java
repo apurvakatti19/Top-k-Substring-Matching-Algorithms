@@ -9,6 +9,8 @@ package TopKSplit;
  *
  * @author apurvakatti
  */
+
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.sql.Connection;
@@ -97,8 +99,8 @@ public class Splittopk {
             }
             
             
-            if(true){
-            //if(cond==false || part=="+"){
+            //if(true){
+            if(cond==false || part=="+"){
                 int lowerbound=splitopk.lowerbound(newqgramString);
                 if(maxheap.topelement()>lowerbound){
                     editdistance=splitopk.editDistance(query,string);
